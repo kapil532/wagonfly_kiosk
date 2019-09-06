@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+
+            layout="@layout/toolbar_with_shadow_with_big_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/half_rectangle">
+
+            <com.com.kartify_fonts.LightTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:text="BILL RECEIPT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_item_icon_textsize" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/slip_color"
+            android:orientation="horizontal"
+android:visibility="gone"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/slip_color"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="16dp">
+
+
+
+                <com.com.kartify_fonts.LightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/slip_color"
+                    android:text="Date"
+                    android:textColor="@color/dark_gray_color"
+                    android:textSize="16sp" />
+
+                <com.com.kartify_fonts.BoldTextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/slip_color"
+                    android:text="29 November 2017"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/menu_item_icon_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:layout_weight="1"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/slip_color"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <com.com.kartify_fonts.LightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:layout_marginTop="40dp"
+                    android:textSize="@dimen/menu_item_icon_textsize" />
+
+                <com.com.kartify_fonts.BoldTextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1:32PM"
+                    android:textSize="@dimen/menu_item_icon_textsize" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:background="@color/slip_color">
+
+
+            <FrameLayout
+                android:id="@+id/framm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/first_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <com.com.kartify_fonts.BoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".9"
+                            android:text="Name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/single_row_mall_list_view_offer" />
+
+                        <com.com.kartify_fonts.BoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.6"
+                            android:gravity="center"
+                            android:text="Quantity"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/single_row_mall_list_view_offer" />
+
+                        <com.com.kartify_fonts.BoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:text="Price"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/single_row_mall_list_view_offer" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/back"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/first_layout"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/dark_gray_color" />
+
+
+                    <ListView
+                        android:id="@+id/list_rec"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/back"
+                        android:divider="@color/slip_color"
+                        android:dividerHeight="3dp">
+
+                    </ListView>
+                    <LinearLayout
+                        android:id="@+id/normal_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".9">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/dark_gray_color"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.6">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/dark_gray_color" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/dark_gray_color"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/list_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".9">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/dark_gray_color"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.6">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/dark_gray_color" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5">
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@color/dark_gray_color"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/my_vieww"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/framm"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_gray_color"></View>
+
+            <LinearLayout
+                android:id="@+id/klkl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_vieww"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+               >
+
+                <include layout="@layout/bill_summery_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/klkl"
+                android:background="@drawable/slip_image">
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/pay_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/full_rectangle"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            android:visibility="gone"
+            android:paddingBottom="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="Download"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

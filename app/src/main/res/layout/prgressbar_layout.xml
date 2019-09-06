@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:src="@drawable/new_wagonfly_logo"
+    android:layout_centerInParent="true"/>
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminateTintMode="src_atop"
+        android:layout_centerInParent="true"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="placeholder_image">50dp</dimen>
+    <dimen name="placeholder_text_height">8dp</dimen>
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="name">15dp</dimen>
+    <dimen name="chef">12dp</dimen>
+    <dimen name="timestamp">11dp</dimen>
+    <dimen name="description">15dp</dimen>
+    <dimen name="price">13dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="fab_button_diameter">56dp</dimen>
+    <dimen name="fab_button_margin_bottom">16dp</dimen>
+    <dimen name="fab_button_margin_right">16dp</dimen>
+    <dimen name="elevation_low">1dp</dimen>
+    <dimen name="button_round_dimen">9dp</dimen>
+
+    <dimen name="elevation_high">8dp</dimen>
+
+
+    <dimen name="bill_summery_margin">8dp</dimen>
+    <dimen name="padding_signup">1dp</dimen>
+    <dimen name="margin_top">5dp</dimen>
+
+
+
+    <dimen name="toolbar_size">48dp</dimen>
+
+
+
+    <dimen name="image_layout_marginLeft">8dp</dimen>
+    <dimen name="image_layout_marginRight">16dp</dimen>
+    <dimen name="image_layout_marginTop">8dp</dimen>
+    <dimen name="image_layout_marginBottom">8dp</dimen>
+
+
+    <dimen name="toolbar_title_font_size">20sp</dimen>
+    <dimen name="toolbar_title_logo_width">30dp</dimen>
+    <dimen name="toolbar_title_logo_height">30dp</dimen>
+    <dimen name="toolbar_des_font_size">12sp</dimen>
+
+
+
+    <dimen name="start_shopping_font_size">18sp</dimen>
+    <dimen name="checkout_scan_font_size">13sp</dimen>
+    <dimen name="mall_image_width">46dp</dimen>
+    <dimen name="mall_image_height">46dp</dimen>
+    <dimen name="slider_width">295dp</dimen>
+
+    <dimen name="profile_image_width_height">45dp</dimen>
+    <dimen name="profile_email_font_size">16sp</dimen>
+    <dimen name="profile_name_font_size">20sp</dimen>
+    <dimen name="profile_layout_height">120dp</dimen>
+
+    <dimen name="menu_item_icon_width_height">14dp</dimen>
+    <dimen name="menu_item_icon_textsize">14sp</dimen>
+    <dimen name="menu_drawer_item_height">42dp</dimen>
+
+    <dimen name="location_barr_city_name_size">15sp</dimen>
+    <dimen name="location_barr_macAddress_size">13sp</dimen>
+
+    <dimen name="type_logo_size">22dp</dimen>
+    <dimen name="mall_list_text_size">14sp</dimen>
+    <dimen name="mall_list_city_name_margin_top">4dp</dimen>
+
+
+
+    <dimen name="kart_list_single_row_image_size">95dp</dimen>
+    <dimen name="kart_list_single_row_textView1_size">18sp</dimen>
+    <dimen name="kart_list_single_row_price_size">14sp</dimen>
+
+
+    <dimen name="single_row_mall_list_parent_layout">92dp</dimen>
+    <dimen name="single_row_mall_list_image_lay">100dp</dimen>
+    <dimen name="single_row_mall_list_imageView1">92dp</dimen>
+    <dimen name="single_row_mall_list_type_logo">26dp</dimen>
+    <dimen name="single_row_mall_list_textView1">15sp</dimen>
+    <dimen name="single_row_mall_list_textView2">13sp</dimen>
+    <dimen name="single_row_mall_list_view_offer">10sp</dimen>
+
+
+    <dimen name="selection_screen_choose_option">14sp</dimen>
+    <dimen name="selection_screen_scan_image_height">58dp</dimen>
+
+
+    <!--progress layout-->
+    <dimen name="progress_layout_image_size">22dp</dimen>
+    <dimen name="progress_bar_image_size">56dp</dimen>
+
+    <dimen name="checkout_screen_paynow_text_size">14sp</dimen>
+
+</resources>

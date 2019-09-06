@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="toolbar_height">44dp</dimen>
+  <dimen name="bv_home_carousel_height">90dp</dimen>
+  <dimen name="bv_location_carousel_height">70dp</dimen>
+
+  <dimen name="offer_listing_row_height">96dp</dimen>
+
+
+
+
+
+    <dimen name="start_shopping_font_size">20sp</dimen>
+    <dimen name="checkout_scan_font_size">10sp</dimen>
+    <dimen name="mall_image_width">38dp</dimen>
+    <dimen name="mall_image_height">38dp</dimen>
+
+
+  <dimen name="slider_width">255dp</dimen>
+</resources>

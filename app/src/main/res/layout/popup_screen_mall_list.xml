@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/item_icon"
+        android:src="@drawable/place_holder"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="18dp"
+    android:background="@color/gray_color"
+    android:layout_below="@+id/item_icon"
+    ></View>
+    <com.com.kartify_fonts.BoldTextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_below="@+id/item_icon"
+        android:textSize="18sp"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <com.com.kartify_fonts.BoldTextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_below="@+id/item_price"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/black"/>
+
+    <com.com.kartify_fonts.LightTextView
+        android:text="alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_des"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/dark_gray_color"
+        android:layout_below="@+id/item_title"
+        android:textStyle="normal|bold"
+        android:textSize="13sp"
+   />
+
+
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dismiss"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="23dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+       android:background="@color/red_color" />
+
+</RelativeLayout>

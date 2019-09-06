@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <include
+
+                layout="@layout/toolbar_with_shadow_with_big_title" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+
+                <RelativeLayout
+                    android:id="@+id/image_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <kartify_base.RoundedImageView
+                        android:id="@+id/rounde_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/ic_profile"
+                        android:scaleType="fitXY">
+
+                    </kartify_base.RoundedImageView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/ic_add_a_photo_white_24dp"
+                    android:visibility="gone" />
+
+
+                <com.com.kartify_fonts.LightTextView
+                    android:id="@+id/name_fi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_lay"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <com.com.kartify_fonts.NormalTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Past Orders"
+                    android:textSize="12sp" />
+                <View
+                    android:layout_width="68dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorPrimaryDark"></View>
+            </LinearLayout>
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                shimmer:duration="800">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <include layout="@layout/order_single_row_anim" />
+                    <include layout="@layout/order_single_row_anim" />
+                    <include layout="@layout/order_single_row_anim" />
+                    <include layout="@layout/order_single_row_anim" />
+                    <include layout="@layout/order_single_row_anim" />
+
+                </LinearLayout>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_marginTop="20dp"
+                android:divider="@color/white"
+                android:dividerHeight="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/progress_bar"
+            layout="@layout/prgressbar_layout"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+        <com.com.kartify_fonts.LightTextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

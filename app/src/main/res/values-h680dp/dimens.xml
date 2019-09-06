@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="toolbar_size">58dp</dimen>
+
+
+
+    <dimen name="image_layout_marginLeft">8dp</dimen>
+    <dimen name="image_layout_marginRight">16dp</dimen>
+    <dimen name="image_layout_marginTop">10dp</dimen>
+    <dimen name="image_layout_marginBottom">10dp</dimen>
+
+
+    <dimen name="toolbar_title_font_size">23sp</dimen>
+    <dimen name="toolbar_title_logo_width">34dp</dimen>
+    <dimen name="toolbar_title_logo_height">34dp</dimen>
+</resources>

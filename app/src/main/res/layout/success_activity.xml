@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back">
+   <kartify.ezetap.printer.CheckView
+        android:id="@+id/check"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:checkView_strokeColor="@color/green"
+        app:checkView_strokeWidth="20dp"
+       android:visibility="gone"
+        />
+   <com.com.kartify_fonts.NormalTextView
+       android:id="@+id/text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/check"
+       android:textColor="@color/black"
+       android:textSize="32sp"
+       android:layout_marginTop="120dp"
+       android:gravity="center"
+       android:text="Thank you for shopping with us."
+       />
+
+   <EditText
+       android:id="@+id/feedback_box"
+       android:layout_below="@id/text"
+       android:layout_width="match_parent"
+       android:layout_margin="40dp"
+       android:layout_height="230dp"
+       android:hint="Feedback"
+       android:padding="20dp"
+       android:textColor="@color/black"
+       android:textColorHint="@color/black"
+       android:textSize="30sp"
+       android:background="@drawable/border_button"
+       />
+
+   <Button
+       android:id="@+id/btn_feedback"
+       android:layout_below="@+id/feedback_box"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
+       android:layout_marginBottom="0dp"
+       android:background="@color/colorPrimaryDark"
+       android:padding="25dp"
+       android:layout_margin="10dp"
+       android:text="Submit"
+       android:textColor="@color/white"
+       android:textSize="18sp"
+       android:visibility="visible" />
+
+</RelativeLayout>

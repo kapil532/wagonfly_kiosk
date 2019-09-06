@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_above="@+id/button_layout"
+    >
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:layout_margin="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/place_holder" />
+<RelativeLayout
+    android:id="@+id/other_lay"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.7"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <com.com.kartify_fonts.BoldTextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+
+
+    <include
+        android:id="@+id/price_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        layout="@layout/price_offers_layout"/>
+
+<View
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/price_layout"
+    android:background="@color/gray_color"/>
+    <com.com.kartify_fonts.BoldTextView
+        android:id="@+id/product_feautre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Product Features"
+        android:layout_below="@+id/view"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/product_feautre"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <com.com.kartify_fonts.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:text="Brand :"
+            android:textStyle="normal" />
+
+    <com.com.kartify_fonts.LightTextView
+        android:id="@+id/item_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/dark_gray_color"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/product_feautre"
+        android:layout_height="wrap_content">
+        <com.com.kartify_fonts.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:text="Supplier :"
+            android:textStyle="normal" />
+
+        <com.com.kartify_fonts.LightTextView
+            android:id="@+id/supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/dark_gray_color"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:paddingRight="5dp"
+            android:text="dismiss"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="0"
+            android:background="@color/red_color"
+            android:paddingRight="5dp"
+            android:text="ADD to Cart"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

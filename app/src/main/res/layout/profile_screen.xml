@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/main_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <include
+                layout="@layout/toolbar_with_shadow_with_big_title" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone">
+
+
+                <RelativeLayout
+                    android:id="@+id/image_lay"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <kartify_base.RoundedImageView
+                        android:id="@+id/rounde_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_profile"
+                        android:scaleType="fitXY">
+
+                    </kartify_base.RoundedImageView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/ic_add_a_photo_white_24dp" />
+
+
+                <com.com.kartify_fonts.LightTextView
+                    android:id="@+id/name_fi"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_lay"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <com.com.kartify_fonts.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Profile"
+                    android:textSize="12sp" />
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorPrimaryDark"></View>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/usernameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:theme="@style/EditTextHintForPrimeNew">
+
+                    <EditText
+                        android:id="@+id/edit_fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/dark_gray_color" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:theme="@style/EditTextHintForPrime">
+
+                        <EditText
+                            android:id="@+id/edit_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile No."
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:textColor="@color/white" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/email_wrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:theme="@style/EditTextHintForPrimeNew">
+
+                        <EditText
+                            android:id="@+id/edit_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/dark_gray_color" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/save_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paytm_image"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="26dp"
+                android:background="@color/colorAccent"
+                android:text="SAVE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

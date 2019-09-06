@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Wagonfly Kiosk</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_disconnect">Disconnect</string>
+    <string name="title_devices">Devices</string>
+    <string name="action_settings">Settings</string>
+    <string name="scan">Scan</string>
+    <string name="stopScan">Stop Scanning</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_otp">Auto Generated OTP</string>
+    <string name="btn_sign_up">Get Started</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="camere">Camera is stand by \nplease tab to start </string>
+    <!-- Menu items -->
+    <string name="home">Home</string>
+    <string name="News">News</string>
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+    <string name="beneficiaryaddress">Address</string>
+    <string name="beneficiarycountry">Country</string>
+    <string name="register_benef">Register Beneficiary</string>
+    <string name="show_list_benef">List of Registered Beneficiary</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+
+    <string name="hint_name">Name</string>
+    <string name="Complete">Done</string>
+    <string name="Error">Try Again</string>
+    <string name="Upload">Pay Now</string>
+
+    <string name="start_shopping">Shopping Cart</string>
+    <string name="rs">\u20B9</string>
+
+    <string name="tnc"><u>*T&amp;Cs</u></string>
+    <string name="signup_text">Please enter your details to get started</string>
+    <string name="signuppage_text">By singing up I agree to the <u>privacy policy</u> and <u>Terms</u> of use.</string>
+
+    <string name="booking_notificatoi">We\'ll notify you before your next booking starts to get easy access to directions and view your pass. We\'ll also let you know when it\'s about to end </string>
+    <string name="promo_notificatoi">We\'ll let you know if cheaper parking becomes available as well as send you any deal or discounts in your area.</string>
+
+
+
+   <!--todolist message-->
+    <string name="confirm">Confirm!</string>
+    <string name="delete_confirm">You are about to delete all items. Do you really want to proceed?</string>
+    <string name="add_new_item">Add a new item</string>
+    <string name="please_add_item">Please add an item!</string>
+
+    <string name="no_network_try_again">No connection, please ensure network is available and try again.</string>
+    <string name="permission_call_phone_rationale">Phone call permission is needed for this feature.</string>
+    <string name="permissions_not_granted">Permissions were not granted.</string>
+
+    <string name="call_now">Need urgent help now?<u>Call us</u></string>
+    <string name="help_string">Got a problem? We\'ll solve it fast. Please let us know below.</string>
+    <string-array name="Planets">
+        <item>Btm first stage </item>
+        <item>Jayanagar 4th block </item>
+        <item>Kormangala 4th block</item>
+
+    </string-array>
+
+    <string name="hello_world">use "USB Host Check" to "Fix" the system file for use USB printing support.(need root)</string>
+    <string name="inputIp">Plese input the printer\'s IP Addr.</string>
+    <string name="inPrinterIp">192.168.1.248</string>
+    <string name="conTest">Open USB</string>
+    <string name="printf">Print</string>
+    <string name="inputData">Welcome to use the impact and thermal printer manufactured by professional POS receipt printer company!\n</string>
+    <string name="log">Log...</string>
+    <string name="OpenCash">OpenCash</string>
+    <string name="CutPaper">CutPaper</string>
+    <string name="OpenedUSB">Opened USB</string>
+
+</resources>

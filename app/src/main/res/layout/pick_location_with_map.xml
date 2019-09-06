@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <FrameLayout
+        android:id="@+id/container_map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/title_fragment"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="vertical"
+           >
+<ImageView
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_arrow_back_dark_black_24dp"
+    android:layout_centerVertical="true"
+    android:padding="8dp"
+
+    />
+            <com.com.kartify_fonts.NormalTextView
+                android:id="@+id/location_Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/back"
+                android:layout_toLeftOf="@+id/search_icon"
+                android:layout_margin="6dp"
+                android:layout_centerVertical="true"
+               android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="14sp">
+
+            </com.com.kartify_fonts.NormalTextView>
+<ImageView
+    android:id="@+id/search_icon"
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:padding="8dp"
+    android:src="@drawable/search_engine"
+    />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_pin" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:padding="10dp"
+            android:visibility="gone"
+            />
+
+        <com.com.kartify_fonts.NormalTextView
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="Set Location"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="normal">
+
+
+
+
+        </com.com.kartify_fonts.NormalTextView>
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

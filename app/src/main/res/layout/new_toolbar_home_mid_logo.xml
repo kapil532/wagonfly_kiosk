@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_size"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_scrollFlags="scroll|enterAlways"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+   <ImageView
+       android:id="@+id/back_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="16dp"
+       android:src="@drawable/ic_arrow_back_black_24dp"
+       android:visibility="gone"
+       />
+
+    <ImageView
+        android:id="@+id/logo_"
+        android:layout_width="@dimen/toolbar_title_logo_width"
+        android:layout_height="@dimen/toolbar_title_logo_width"
+        android:textColor="#fff"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/back_button"
+        android:src="@drawable/new_wagonfly_logo"
+        android:layout_gravity="center"
+      />
+
+        <com.com.kartify_fonts.BoldTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VAN HUESEN"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/toolbar_title_font_size"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/logo_"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="4dp"
+    card_view:cardMaxElevation="6dp"
+    android:layout_margin="5dp"
+    android:elevation="14dp">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+    <ImageView
+        android:id="@+id/image_one"
+        android:layout_width="@dimen/mall_image_height"
+        android:layout_height="@dimen/mall_image_height"
+        android:scaleType="centerCrop"/>
+
+<TextView
+    android:id="@+id/mall_name"
+    android:layout_width="match_parent"
+    android:layout_below="@id/image_one"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/mall_addre"
+            android:layout_width="match_parent"
+            android:layout_below="@id/image_one"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_n_gray_color"
+            android:textSize="12dp"/>
+
+
+    </RelativeLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:divider="@color/gray_color"
+        android:dividerHeight="1dp"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

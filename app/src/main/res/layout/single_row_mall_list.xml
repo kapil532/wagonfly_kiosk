@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="4dp"
+    card_view:cardMaxElevation="6dp"
+    android:layout_margin="5dp"
+    android:elevation="12dp"
+    >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/single_row_mall_list_parent_layout"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/image_lay"
+        android:layout_width="@dimen/single_row_mall_list_image_lay"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/single_row_mall_list_imageView1"
+            android:layout_height="@dimen/single_row_mall_list_imageView1"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/place_holder" />
+
+        <ImageView
+            android:layout_width="@dimen/single_row_mall_list_type_logo"
+            android:layout_height="@dimen/single_row_mall_list_type_logo"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/type" />
+
+
+    </RelativeLayout>
+
+    <com.com.kartify_fonts.NormalTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/image_lay"
+        android:text="TextView"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="@dimen/single_row_mall_list_textView1" />
+
+    <com.com.kartify_fonts.LightTextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_gravity="center"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/image_lay"
+        android:text="TextView"
+        android:maxLines="2"
+        android:textColor="@color/dark_gray_color"
+        android:textSize="@dimen/single_row_mall_list_textView2" />
+    <com.com.kartify_fonts.LightTextView
+        android:id="@+id/offers_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/image_lay"
+        android:layout_toLeftOf="@+id/offer_lay"
+        android:maxLines="2"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/dark_gray_color"
+        android:textSize="8sp" />
+
+    <RelativeLayout
+        android:id="@+id/offer_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <com.com.kartify_fonts.LightTextView
+            android:id="@+id/view_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:text="VIEW OFFERS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/single_row_mall_list_view_offer" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

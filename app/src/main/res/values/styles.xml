@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="button" >
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PrimaryColoredButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent_button</item>
+    </style>
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="EditTextHintForPrime" >
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="colorControlHighlight">@color/black</item>
+    </style>
+
+    <style name="EditTextHintForPrimeNew">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/dark_gray_color</item>
+        <item name="colorControlNormal">@color/dark_gray_color</item>
+        <item name="colorControlActivated">@color/dark_gray_color</item>
+        <item name="colorControlHighlight">@color/dark_gray_color</item>
+    </style>
+
+    <style name="edit_box">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding_signup</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+    </style>
+</resources>

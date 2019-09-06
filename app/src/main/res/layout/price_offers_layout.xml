@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/retail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.com.kartify_fonts.LightTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="M.R.P"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/GreyIconColor"/>
+<com.com.kartify_fonts.LightTextView
+    android:id="@+id/first_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="200rs"
+    android:textSize="15sp"
+    android:textColor="@color/GreyIconColor"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/offers"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@+id/retail">
+    <com.com.kartify_fonts.LightTextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Offers"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/GreyIconColor"/>
+
+       <com.com.kartify_fonts.LightTextView
+           android:id="@+id/offer_price_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="20%"
+           android:layout_marginLeft="10dp"
+           android:textSize="12sp"
+           android:textColor="@color/GreyIconColor"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gst_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/offers">
+        <com.com.kartify_fonts.LightTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="GST"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/GreyIconColor"/>
+
+        <com.com.kartify_fonts.LightTextView
+            android:id="@+id/price_gst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/GreyIconColor"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/gst_lay">
+
+        <com.com.kartify_fonts.LightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/first_price"
+            android:textColor="@color/black"></com.com.kartify_fonts.LightTextView>
+    <com.com.kartify_fonts.LightTextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200rs"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/first_price"
+        android:textColor="@color/black"/>
+    </LinearLayout>
+</RelativeLayout>

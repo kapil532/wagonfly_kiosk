@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_toLeftOf="@+id/price"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <com.com.kartify_fonts.BoldTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+    <com.com.kartify_fonts.LightTextView
+        android:id="@+id/offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Offers Available"
+        android:layout_marginLeft="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_rect"
+        android:textSize="12dp" />
+
+</LinearLayout>
+            <com.com.kartify_fonts.NormalTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <com.com.kartify_fonts.NormalTextView
+            android:id="@+id/price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+
+        <com.com.kartify_fonts.NormalTextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_color"></View>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

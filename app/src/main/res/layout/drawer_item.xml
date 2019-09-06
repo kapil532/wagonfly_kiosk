@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_drawer_item_height"
+    android:orientation="horizontal"
+    android:gravity="center|left"
+    android:paddingLeft="15dp">
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="@dimen/menu_item_icon_width_height"
+        android:layout_height="@dimen/menu_item_icon_width_height"
+        android:visibility="visible"
+        android:src="@mipmap/ic_email_black_dp"/>
+    <com.com.kartify_fonts.LightTextView
+        android:id="@+id/itemNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#939393"
+        android:text="Menu Item"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/menu_item_icon_textsize" />
+</LinearLayout>

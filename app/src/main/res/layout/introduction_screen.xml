@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+           />
+
+        <com.com.kartify_fonts.NormalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:text="USER GUIDE"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <com.com.kartify_fonts.LightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="A step by step guide to use the Kartify App"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:padding="10dip"
+        app:centered="true"
+        app:fillColor="@color/colorPrimaryDark"
+        app:pageColor="@color/colorPrimary"
+        app:snap="false" />
+
+
+</RelativeLayout>

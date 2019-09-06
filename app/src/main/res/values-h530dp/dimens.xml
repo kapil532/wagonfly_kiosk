@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="toolbar_height">45dp</dimen>
+  <dimen name="bv_home_carousel_height">130dp</dimen>
+  <dimen name="bv_location_carousel_height">110dp</dimen>
+  <dimen name="offer_listing_row_height">118dp</dimen>
+
+
+
+  <dimen name="toolbar_size">46dp</dimen>
+
+
+  <dimen name="image_layout_marginLeft">8dp</dimen>
+  <dimen name="image_layout_marginRight">16dp</dimen>
+  <dimen name="image_layout_marginTop">8dp</dimen>
+  <dimen name="image_layout_marginBottom">8dp</dimen>
+
+  <dimen name="toolbar_title_font_size">18sp</dimen>
+  <dimen name="toolbar_title_logo_width">28dp</dimen>
+  <dimen name="toolbar_title_logo_height">28dp</dimen>
+
+    <dimen name="start_shopping_font_size">22sp</dimen>
+    <dimen name="checkout_scan_font_size">12sp</dimen>
+    <dimen name="mall_image_width">42dp</dimen>
+    <dimen name="mall_image_height">42dp</dimen>
+
+
+  <dimen name="slider_width">275dp</dimen>
+</resources>

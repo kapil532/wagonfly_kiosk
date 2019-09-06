@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <!--  <include layout="@layout/toolbar_with_logo_home" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/barcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+<Button
+    android:id="@+id/clear"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:text="CLEAR"
+    android:layout_centerHorizontal="true"/>
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_rfid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ProgressBar
+                        android:id="@+id/prgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                <com.com.kartify_fonts.LightTextView
+                    android:id="@+id/rfid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="RFID"
+                    android:textColor="#000"
+                    android:textSize="@dimen/start_shopping_font_size" />
+                </LinearLayout>
+                <com.com.kartify_fonts.LightTextView
+                    android:id="@+id/rfidss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="totalData"
+                    android:textColor="#000"
+                    android:textSize="@dimen/start_shopping_font_size" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+                android:padding="15dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/scan_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/colorPrimaryDark">
+<ProgressBar
+    android:id="@+id/progress_bar_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+                    <com.com.kartify_fonts.LightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/checkout_scan_font_size" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

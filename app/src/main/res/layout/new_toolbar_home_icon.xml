@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_size"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <ImageView
+       android:id="@+id/back_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/image_layout_marginLeft"
+       android:layout_marginRight="@dimen/image_layout_marginRight"
+       android:layout_marginTop="@dimen/image_layout_marginTop"
+       android:layout_marginBottom="@dimen/image_layout_marginBottom"
+       android:src="@drawable/ic_menu_black_24dp"
+       android:visibility="visible"
+       />
+
+    <ImageView
+        android:id="@+id/logo_"
+        android:layout_width="@dimen/toolbar_title_logo_width"
+        android:layout_height="@dimen/toolbar_title_logo_height"
+        android:textColor="#fff"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/back_button"
+        android:src="@mipmap/logo_a"
+        android:layout_gravity="center"
+      />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/logo_"
+    android:orientation="vertical">
+        <com.com.kartify_fonts.BoldTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VAN HUESEN"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/toolbar_title_font_size"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            />
+        <com.com.kartify_fonts.LightTextView
+            android:id="@+id/des"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Banner Gatta"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/dark_gray_color"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:layout_marginTop="1dp"
+            />
+</LinearLayout>
+        <ImageView
+            android:id="@+id/store"
+            android:layout_width="@dimen/toolbar_title_logo_width"
+            android:layout_height="@dimen/toolbar_title_logo_height"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:src="@drawable/type"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

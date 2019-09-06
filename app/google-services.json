@@ -1,0 +1,144 @@
+{
+  "project_info": {
+    "project_number": "287289597961",
+    "firebase_url": "https://wagonfly-a437d.firebaseio.com",
+    "project_id": "wagonfly-a437d",
+    "storage_bucket": "wagonfly-a437d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287289597961:android:8e5430d0c03ae695",
+        "android_client_info": {
+          "package_name": "com.cafefly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287289597961-5urdf90pbhgv8t2serflgtcqgnu87q4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD13rtboNNikQVLXu2JYZfJKOUNgS0kLQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287289597961:android:6c32f6a4c0824a39",
+        "android_client_info": {
+          "package_name": "com.wagonfly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287289597961-5ppeuhpcvq23gup2qki5b373mqa8kokg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wagonfly",
+            "certificate_hash": "14178df21965d9cbdeb3ea1aece6fb3b6a70146d"
+          }
+        },
+        {
+          "client_id": "287289597961-5urdf90pbhgv8t2serflgtcqgnu87q4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD13rtboNNikQVLXu2JYZfJKOUNgS0kLQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287289597961-5urdf90pbhgv8t2serflgtcqgnu87q4s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "287289597961-l79qu9479k03dqbdov0a797e7jv193g9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myexamples.apn.ExamplePushN"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287289597961:android:a428e02c5bab9741",
+        "android_client_info": {
+          "package_name": "prod.wagonfly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287289597961-qafbhosqq899hbegae2rukh93vtbtfcc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "prod.wagonfly",
+            "certificate_hash": "14178df21965d9cbdeb3ea1aece6fb3b6a70146d"
+          }
+        },
+        {
+          "client_id": "287289597961-5urdf90pbhgv8t2serflgtcqgnu87q4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD13rtboNNikQVLXu2JYZfJKOUNgS0kLQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287289597961-5urdf90pbhgv8t2serflgtcqgnu87q4s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "287289597961-l79qu9479k03dqbdov0a797e7jv193g9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myexamples.apn.ExamplePushN"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

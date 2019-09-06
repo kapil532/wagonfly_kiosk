@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp"
+    card_view:cardElevation="4dp"
+    card_view:cardMaxElevation="6dp">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+  <RelativeLayout
+      android:id="@+id/product_desc_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+
+
+      <ImageView
+          android:id="@+id/thumbnail"
+          android:layout_width="105dp"
+          android:layout_height="105dp"
+          android:src="@drawable/place_holder"/>
+     <TextView
+         android:id="@+id/product_desc"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/GreyFourHundred"
+        android:layout_centerVertical="true"
+         android:text="Gayatri - The Highest Meditation 9th Edition (By motilal Banarasi Das)"
+         android:layout_toRightOf="@+id/thumbnail"
+         android:layout_marginRight="12dp"
+         android:textSize="16sp"
+         />
+
+      <ImageView
+          android:id="@+id/cancel_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_margin="4dp"
+          android:src="@drawable/ic_close_black_24dp"/>
+  </RelativeLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_margin="4dp"
+               android:layout_below="@+id/product_desc_layout"
+
+               android:background="@color/GreyFourHundred"
+               />
+      <RelativeLayout
+          android:id="@+id/quantity_lay"
+          android:layout_width="match_parent"
+          android:layout_below="@+id/product_desc_layout"
+          android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Quantity  3"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/price_per_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Price Unit 3 x 40"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+      </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_below="@+id/quantity_lay"
+            android:background="@color/GreyFourHundred"
+            android:layout_marginBottom="2dp"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

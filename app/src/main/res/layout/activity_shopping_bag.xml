@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <ListView
+               android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/white"
+                android:layout_margin="16dp"
+                android:layout_above="@+id/total_price_lay"
+                android:dividerHeight="8dp">
+
+            </ListView>
+<LinearLayout
+    android:id="@+id/total_price_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/buttons"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    >
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/GreyFourHundred"
+    ></View>
+         <TextView
+             android:id="@+id/total_price"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="16sp"
+             android:paddingRight="8dp"
+             android:layout_marginTop="8dp"
+             android:layout_marginBottom="8dp"
+            android:gravity="right"
+
+             android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/GreyFourHundred"
+        ></View>
+</LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="65dp"
+             android:weightSum="2"
+             android:id="@+id/buttons"
+             android:layout_alignParentBottom="true"
+             android:orientation="horizontal">
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_margin="8dp"
+                 android:background="@drawable/rounded_button_different_color"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:text="Continue Shopping"
+                     android:gravity="center"
+                     android:textSize="18sp"
+                     android:textColor="@color/white"
+                     android:layout_gravity="center"
+                     />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_weight="1" android:layout_margin="8dp"
+                 android:background="@drawable/rounded_button"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:text="Checkout"
+                     android:gravity="center"
+                     android:textSize="18sp"
+                     android:textColor="@color/white"
+                     android:layout_gravity="center"
+                     />
+
+             </LinearLayout>
+
+         </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

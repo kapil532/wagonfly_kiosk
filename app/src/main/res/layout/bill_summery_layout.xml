@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp">
+
+      <com.com.kartify_fonts.NormalTextView
+          android:id="@+id/store_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="14sp"
+          android:layout_marginTop="@dimen/bill_summery_margin"
+          android:textColor="@color/black"
+          android:text="Store Bill"
+
+          />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/store_title"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bill_summery_margin"
+            android:orientation="horizontal"
+            >
+
+            <com.com.kartify_fonts.LightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Items Price"/>
+
+            <com.com.kartify_fonts.LightTextView
+                android:id="@+id/total_price"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="200"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/offerLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/bill_summery_margin"
+            android:visibility="gone"
+            >
+
+            <com.com.kartify_fonts.LightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Offer Discount"/>
+
+            <com.com.kartify_fonts.LightTextView
+                android:id="@+id/offer_discount"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text=""/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/bill_summery_margin"
+            android:visibility="gone"
+            >
+
+            <com.com.kartify_fonts.LightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Carry bag Charge"/>
+
+            <com.com.kartify_fonts.LightTextView
+                android:id="@+id/packaging_charge"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="5"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gst_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bill_summery_margin"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <com.com.kartify_fonts.LightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="GST"/>
+
+            <com.com.kartify_fonts.LightTextView
+                android:id="@+id/gst"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text=""/>
+
+        </RelativeLayout>
+
+
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:layout_marginTop="@dimen/bill_summery_margin"
+     android:background="@color/gray_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/bill_summery_margin"
+            android:layout_marginBottom="@dimen/bill_summery_margin"
+            >
+
+            <com.com.kartify_fonts.NormalTextView
+                android:id="@+id/toPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="To Pay"/>
+
+            <com.com.kartify_fonts.NormalTextView
+                android:id="@+id/final_prize"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="200"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

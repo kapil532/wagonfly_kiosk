@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+        <include
+            layout="@layout/toolbar_with_shadow_with_big_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.com.kartify_fonts.LightTextView
+                android:id="@+id/faq_touch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/help_string"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="I'm unable to scan item"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="I'm unable to checkout"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="I'd like a call back as soon as possible"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="Other (Please explain)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_box"
+                    style="@style/edit_box"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/rect_select"
+                    android:cursorVisible="true"
+                    android:hint="Other"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:padding="8dp"
+                    android:textCursorDrawable="@drawable/text_cursor_cyan" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="?attr/colorAccent"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.com.kartify_fonts.LightTextView
+                android:id="@+id/callNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="@string/call_now"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

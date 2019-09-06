@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="toolbar_size">50dp</dimen>
+
+
+
+    <dimen name="image_layout_marginLeft">8dp</dimen>
+    <dimen name="image_layout_marginRight">16dp</dimen>
+    <dimen name="image_layout_marginTop">8dp</dimen>
+    <dimen name="image_layout_marginBottom">8dp</dimen>
+
+
+    <dimen name="toolbar_title_font_size">23sp</dimen>
+    <dimen name="toolbar_title_logo_width">33dp</dimen>
+    <dimen name="toolbar_title_logo_height">33dp</dimen>
+
+
+
+    <dimen name="start_shopping_font_size">19sp</dimen>
+    <dimen name="checkout_scan_font_size">14sp</dimen>
+    <dimen name="mall_image_width">48dp</dimen>
+    <dimen name="mall_image_height">48dp</dimen>
+
+
+    <dimen name="slider_width">305dp</dimen>
+</resources>

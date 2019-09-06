@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_with_shadow_with_big_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/half_rectangle"
+            android:gravity="center">
+
+            <com.com.kartify_fonts.LightTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="PAYMENT RECEIVED"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/slip_color"
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/slip_color"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="16dp">
+
+
+
+                <com.com.kartify_fonts.LightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/slip_color"
+                    android:text="Date"
+                    android:textColor="@color/dark_gray_color"
+                    android:textSize="16sp" />
+
+                <com.com.kartify_fonts.BoldTextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/slip_color"
+                    android:text="29 November 2017"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/slip_color"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <com.com.kartify_fonts.LightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textSize="16sp" />
+
+                <com.com.kartify_fonts.BoldTextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1:32PM"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/slip_color"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/qrcode"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/place_holder"
+                android:visibility="visible" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/slip_color"
+        android:orientation="vertical">
+
+        <com.com.kartify_fonts.BoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Please show above QR code to our representative at the exit or counter"
+
+            />
+        <com.com.kartify_fonts.LightTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray_color"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="Show this screen to the representative"
+            />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/slip_color"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="45dp"
+          android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corner_with_white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp">
+
+
+
+                <com.com.kartify_fonts.LightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Amount"
+                    android:textColor="@color/dark_gray_color"
+                    android:textSize="16sp" />
+
+                <com.com.kartify_fonts.BoldTextView
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:layout_weight="1"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <com.com.kartify_fonts.LightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Items"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp" />
+
+                <com.com.kartify_fonts.BoldTextView
+                    android:id="@+id/items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
